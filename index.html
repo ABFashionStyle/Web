@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Ropa y Zapatos</title>
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tienda de Ropa y Zapatos</h1>
+        <a href="cart.php" class="cart-button">Carrito de Compras</a>
+    </header>
+    <main>
+        <div class="product">
+            <h2>Camisa</h2>
+            <p>Precio: $20</p>
+            <form action="add_to_cart.php" method="post">
+                <input type="hidden" name="product" value="Camisa">
+                <input type="hidden" name="price" value="20">
+                <button type="submit">Agregar al Carrito</button>
+            </form>
+        </div>
+        <div class="product">
+            <h2>Pantalones</h2>
+            <p>Precio: $30</p>
+            <form action="add_to_cart.php" method="post">
+                <input type="hidden" name="product" value="Pantalones">
+                <input type="hidden" name="price" value="30">
+                <button type="submit">Agregar al Carrito</button>
+            </form>
+        </div>
+        <div class="product">
+            <h2>Zapatos</h2>
+            <p>Precio: $50</p>
+            <form action="add_to_cart.php" method="post">
+                <input type="hidden" name="product" value="Zapatos">
+                <input type="hidden" name="price" value="50">
+                <button type="submit">Agregar al Carrito</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
